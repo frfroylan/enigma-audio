@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>EnigmaAudio - Equipment</title>
+	<meta NAME="viewport" CONTENT="width=device-width, initial-scale=1">
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -10,8 +11,6 @@
 	<link rel="stylesheet" href="styles/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Poiret+One|Muli:400,300|Maven+Pro:400,500,700' rel='stylesheet' type='text/css'>
 	
-	
-
 </head>
 <body>
 
@@ -24,7 +23,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html"><span class="home-link">Enigma Audio</span></a>
+				<a class="navbar-brand" href="index.html"><span class="home-link">Home</span></a>
 				
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
@@ -40,52 +39,54 @@
 	</nav>
 
 	<!-- Jumbo Image and Text-->
-	<div class="container-fluid home">
-		<!--<img src="http://terrimoore.com/wp-content/uploads/2014/02/2014-02-06-los-angeles1.jpg" id="img" />-->
+	<div class="filter">
+		<div class="container-fluid home">
+			<!--<img src="http://terrimoore.com/wp-content/uploads/2014/02/2014-02-06-los-angeles1.jpg" id="img" />-->
 
-		<h1 class="jumbo-header">Equipment</h1>
-	</div>
-
-	<div class="container equi">
-		<div class="row">
-			<div class="col-lg-3 col-md-12">
-				<h1 class="equi-header">Speakers</h1>
-				<hr>
-				<ul class="equi-list">
-				 	<li class="equi-item">Speaker 1</li>
-				 	<li class="equi-item">Speaker 2</li>
-				 	<li class="equi-item">Speaker 3</li>
-				 </ul> 
-			</div>
-			<div class="col-lg-3 col-md-12">
-				<h1 class="equi-header">Amps</h1>
-				<hr>
-				<ul class="equi-list">
-				 	<li class="equi-item">Amps 1</li>
-				 	<li class="equi-item">Amp 2</li>
-				 	<li class="equi-item">Amp 3</li>
-				 </ul> 
-			</div>
-			<div class="col-lg-3 col-md-12">
-				<h1 class="equi-header">Lights</h1>
-				<hr>
-				<ul class="equi-list">
-				 	<li class="equi-item">Light 1</li>
-				 	<li class="equi-item">Light 2</li>
-				 	<li class="equi-item">Light 3</li>
-				 </ul> 
-			</div>
-			<div class="col-lg-3 col-md-12">
-				<h1 class="equi-header">Controllers</h1>
-				<hr>
-				<ul class="equi-list">
-				 	<li class="equi-item">Controller 1</li>
-				 	<li class="equi-item">Controller 2</li>
-				 	<li class="equi-item">Controller 3</li>
-				 </ul> 
-			</div>
+			<h1 class="jumbo-header">Equipment</h1>
 		</div>
-	</div> <!-- /container -->
+
+		<div class="container equi">
+			<div class="row">
+				<div class="col-lg-3 col-md-12">
+					<h1 class="equi-header">Speakers</h1>
+					<hr>
+					<ul class="equi-list">
+					 	<li class="equi-item">Speaker 1</li>
+					 	<li class="equi-item">Speaker 2</li>
+					 	<li class="equi-item">Speaker 3</li>
+					 </ul> 
+				</div>
+				<div class="col-lg-3 col-md-12">
+					<h1 class="equi-header">Amps</h1>
+					<hr>
+					<ul class="equi-list">
+					 	<li class="equi-item">Amps 1</li>
+					 	<li class="equi-item">Amp 2</li>
+					 	<li class="equi-item">Amp 3</li>
+					 </ul> 
+				</div>
+				<div class="col-lg-3 col-md-12">
+					<h1 class="equi-header">Lights</h1>
+					<hr>
+					<ul class="equi-list">
+					 	<li class="equi-item">Light 1</li>
+					 	<li class="equi-item">Light 2</li>
+					 	<li class="equi-item">Light 3</li>
+					 </ul> 
+				</div>
+				<div class="col-lg-3 col-md-12">
+					<h1 class="equi-header">Controllers</h1>
+					<hr>
+					<ul class="equi-list">
+					 	<li class="equi-item">Controller 1</li>
+					 	<li class="equi-item">Controller 2</li>
+					 	<li class="equi-item">Controller 3</li>
+					 </ul> 
+				</div>
+			</div>
+		</div> <!-- /container -->
+	</div>
 
 	<footer>
 		<p>&copy; 2015 Company, Inc.</p>
@@ -102,7 +103,8 @@ $(document).ready(function(){
 	var clicked = false;//Needed to trigger GSAP animation
 
 	$("#navbutton").click(function(){
-		console.log("here1");
+
+		$(".filter").toggleClass("filtered");
 		//Using GSAP to move the text on jumbotron when the mobile menu is clicked
 		home = $('.home');
 		if(clicked){

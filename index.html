@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>EnigmaAudio</title>
+	<meta NAME="viewport" CONTENT="width=device-width, initial-scale=1">
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -9,8 +10,6 @@
 	<!-- Enigma Audio CSS -->
 	<link rel="stylesheet" href="styles/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Poiret+One|Muli:400,300|Maven+Pro:400,500,700' rel='stylesheet' type='text/css'>
-	
-	
 
 </head>
 <body>
@@ -23,7 +22,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html"><span class="home-link">Enigma Audio</span></a>
+				<a class="navbar-brand" href="index.html"><span class="home-link">Home</span></a>
 				
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
@@ -38,22 +37,15 @@
 		</div>
 	</nav>
 
-	<!-- Jumbo Image and Text-->
-	<div class="container-fluid home">
-		<img src="http://terrimoore.com/wp-content/uploads/2014/02/2014-02-06-los-angeles1.jpg" id="img" />
+	<div class="filter">
+		<!-- Jumbo Image and Text-->
+		<div class="container-fluid home">
+			<img src="http://terrimoore.com/wp-content/uploads/2014/02/2014-02-06-los-angeles1.jpg" id="img" />
 
-		<h1 class="jumbo-header">Our Mission</h1>
-		<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	</div>
-
-	<div class="container">
-		<!--Example row of columns -->
-		<div class="row">
-			<div class="col-lg-12">
-				
-			</div>
+			<h1 class="jumbo-header">Enigma Audio</h1>
+			<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 		</div>
-	</div> <!-- /container -->
+	</div>
 
 	<footer>
 		<p>&copy; 2015 Enigma Audio</p>
@@ -70,7 +62,7 @@ $(document).ready(function(){
 
 	$("#navbutton").click(function(){
 		//Blur image by adding filtered class
-		$(".home").toggleClass("filtered");
+		$(".filter").toggleClass("filtered");
 
 		//Using GSAP to move the text on jumbotron when the mobile menu is clicked
 		home = $('.home');
