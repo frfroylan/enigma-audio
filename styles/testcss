@@ -1,0 +1,690 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Poiret One', cursive;
+}
+
+/* NAVBAR */
+.navbar{
+	background: transparent;
+	border: none;
+	font-family: 'Muli';
+}
+.home-link{
+	color: black;
+	font-size: 28px;
+}
+.nav-item{
+	font-size: 18px;
+	color: black;
+}
+.home-link:hover,
+.nav-item:hover{
+	color: white;
+}
+#navbutton{
+	border: none;
+	color: black;
+}
+span.icon-bar{
+	border: 1px solid black;
+}
+.navbar-toggle:hover span.icon-bar{
+	border: 1px solid white;
+}
+
+/* JUMBO SECTION */
+
+img.bg {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1
+}
+img.blur {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+img.contact-blur {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+.home{
+	margin-top: 50px;
+}
+.jumbo-header{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 400;
+	margin-top: 50px;
+	animation: fadeInHeader 3s;
+}
+@keyframes fadeInHeader{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.filtered{
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+}
+.text{
+	font-size: 22px;
+	text-align: center;
+	margin: 70px;
+	line-height: 35px;
+	animation: fadeInText 5s;
+}
+@keyframes fadeInText{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+/** Carousel **/
+.carousel{
+	width: 100%;
+	height: 500px;
+	background: white;
+	margin-bottom: 70px;
+}
+#myCarousel img{
+	width: auto;
+	height: 500px;
+	margin:  0 auto;
+}
+ol  li{
+	color:black;
+}
+
+/** Equipment**/
+.equi{
+	margin-top: 70px;
+	margin-bottom: 70px;
+	animation: fadeInText 3s;
+}
+.equi-header{
+	font-weight: 700;
+	animation: fadeInText 3s;
+}
+ul.equi-list{
+	list-style-type: none;
+}
+li.equi-item{
+	padding-left: 10px;
+	padding-top: 10px;
+	font-size: 18px;
+	font-family: 'Muli';
+}
+hr{
+	border: 1px solid black;
+}
+
+
+/*** MEDIA ***/
+/* JesterBox 
+ * Author: Schizohatter/Soanvig (http://schizohatter.tk)
+ * More information in readme (https://github.com/soanvig/JesterBox)
+ */
+
+.JesterBox div 
+{ 
+    visibility: hidden;
+    position: fixed;
+    top: 5%; right: 5%; bottom: 5%; left: 5%;
+    z-index: 75;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.JesterBox div:before
+{
+    content: '';
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: 74;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.5s ease-out;
+}
+
+.JesterBox div img
+{
+    position: relative;
+    z-index: 77;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: -9999px;
+    opacity: 0;
+    transition-property: all, opacity;
+    transition-duration: 0.5s, 0.2s;
+    transition-timing-function: ease-in-out, ease-out;
+}
+
+.JesterBox div:target { visibility: visible; }
+
+.JesterBox div:target:before { background-color: rgba(0, 0, 0, 0.7); }
+
+.JesterBox div:target img
+{
+    margin-left: 0px;
+    opacity: 1;
+}
+
+.flex-container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    margin-bottom: 100px;
+}
+.flex-images{
+	border: 1px solid black;
+	width: 300px;
+	height: 250px;
+	margin: 5px;
+	animation: fadeInText 3s;
+}
+#media-image{
+	width: 100%;
+	height: 100%;
+}
+
+/** Services **/
+.services{
+	text-align: center;
+	font-size: 24px;
+	font-style: bold;
+	margin-top: 30px;
+	margin-bottom: 100px;
+}
+.service-item{
+	list-style: none;
+	padding-top: 10px;
+	font-family: 'Muli';
+	animation: fadeInText 3s;
+}
+/*** CONTACT ***/
+.david, 
+.keith{
+	font-family: 'Poiret One';
+	font-weight: 400;
+	width: 300px;
+	height: 300px;
+}
+.david{
+	float: left;
+	margin-left: 80px;
+}
+.keith{
+	float: right;
+}
+.con-list{
+	list-style-type: none;
+	margin-left: 40px;
+	font-size: 32px;
+	font-family: 'Muli';
+}
+.name{
+	font-weight: 700;
+	font-size: 56px;
+}
+
+/* FOOTER */
+footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	background: transparent;
+	color: black;
+	text-align: center;
+	padding-top: 20px;
+}
+
+/** MEDIA QUERIES **/
+
+/*** IPHONE 4/5 /  Galaxy S 2 ***/
+@media (min-width: 0px) and (max-width: 325px){
+	/** Navbar **/
+	.home-link{	
+		font-size: 20px;
+	}
+	/******************/
+	/** Index **/
+	.jumbo-header{
+		font-size: 32px;
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+	.text{
+		font-size: 18px;
+		margin: 5px;
+		line-height: 25px;
+	}
+	.container{
+		margin-bottom: 100px;
+	}
+	/******************/
+	/** Equipment **/
+	.equi{
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+	.equi-header{	
+		font-size: 22px;
+	}
+	li.equi-item{
+		padding-left: 5px;
+		padding-top: 0px;
+		font-size: 18px;
+	}
+	ul.equi-list{
+		margin-top: -10px;
+	}
+	/******************/
+	/** Contact **/
+	.david, .keith{
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.keith{
+		margin-top: -100px;
+	}
+	.con-list{
+		margin-left: 10px;
+		font-size: 22px;
+	}
+	.name{
+		font-size: 32px;
+	}
+	.con-container{
+		margin-bottom: 0px;
+	}
+	/******************/
+	/** Service **/
+	.service-item{
+		font-size: 18px;
+	}
+	.services{
+		margin-top: 0px;
+	}
+	/******************/
+	/** Footer **/
+	footer{
+		height: 50px;
+		padding-top: 10px;
+	}
+	/******************/
+}
+
+/** NEW PHONES IPHONE 6 / NOTE 5 **/
+@media (min-width: 326px) and (max-width: 375px){
+	/** Navbar **/
+	.home-link{
+		font-size: 24px;
+	}
+	/******************/
+	/** Index **/
+	.container{
+		margin-bottom: 200px;
+	}
+	.jumbo-header{
+		font-size: 42px;
+		margin-top: 20px;
+	}
+	.text{
+		font-size: 20px;
+		margin: 5px;
+		line-height: 30px;
+	}
+	/******************/
+	/** Equipment **/
+	.equi-header{
+		font-size: 24px;
+	}
+	ul.equi-list{
+		margin-top: -10px;
+	}
+	li.equi-item{
+		padding-left: 5px;
+		padding-top: 10px;
+		font-size: 18px;
+	}
+	.equi{
+		margin-top: 10px;
+		margin-bottom: 270px;
+	}
+	
+	/******************/
+	/** Services **/
+	.service-item{
+		padding-top: 0;
+		font-size: 20px;
+	}
+	/******************/
+	/** Contact **/
+	.david, .keith{
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.keith{
+		margin-top: -100px;
+	}
+	.con-list{
+		margin-left: 10px;
+		font-size: 22px;
+	}
+	.name{
+		font-size: 32px;
+	}
+	.con-container{
+		margin-bottom: 0px;
+	}
+}
+
+/** IPHONE 6 PlUS and Other **/
+@media (min-width: 376px) and (max-width: 529px){
+	/** Navbar **/
+	.navbar-collapse{
+		background-color: transparent;
+	}
+	.nav-item{
+		font-size: 20px;
+	}
+	.home-link{
+		font-size: 28px;
+	}
+	.home-link:hover,
+	.nav-item:hover{
+		color: white;
+	}
+	.container{
+		margin-bottom: 200px;
+	}
+	/***************/
+	/*** Index ***/
+	.home{
+		margin-top: 50px;
+	}
+	.text{
+		font-size: 20px;
+		text-align: center;
+		margin: 20px;
+		line-height: 30px;
+	}
+	.jumbo-header{
+		font-size: 52px;
+		margin-top: 20px;
+	}
+	/*********************/
+	/*** Equipment ***/
+	.equi-header{
+		font-size: 32px;
+	}
+	.equi-item{
+		font-size: 24px;
+	}
+	ul.equi-list{
+		margin-top: -10px;
+	}	
+	.equi{
+		margin-top: 10px;
+		margin-bottom: 300px;
+	}
+	/*****************/
+	/*** Contact ***/
+	.david, .keith{
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.keith{
+		margin-top: -100px;
+	}
+	.con-list{
+		margin-left: 10px;
+		font-size: 24px;
+	}
+	.name{
+		font-size: 34px;
+	}
+	.con-container{
+		margin-bottom: 0px;
+	}
+
+}
+
+/** Most tablets**/
+@media (min-width: 530px) and (max-width: 767px){
+	/** Navbar **/
+	.home-link{
+		font-size: 32px;
+	}
+	.nav-item{
+		font-size: 24px;
+	}
+	.container{
+		margin-bottom: 250px;
+	}
+	/**************/
+	/** Index **/
+	.jumbo-header{
+		font-size: 52px;
+		margin-top: 0px;
+	}
+	.text{
+		font-size: 26px;
+		margin: 20px;
+		line-height: 36px;
+	}
+	/******************/
+	/** Equipment**/
+	.equi-header{
+		font-size: 36px;
+	}
+	li.equi-item{
+		font-size: 22px;
+	}
+	ul.equi-list{
+		margin-top: -10px;
+	}
+	.equi{
+		margin-top: 10px;
+		margin-bottom: 400px;
+	}
+	/******************/
+	/** Contact **/
+	.david, .keith{
+		float: none;
+		margin-left: 5px;
+		margin-right: auto;
+	}
+	.keith{
+		margin-top: -60px;
+	}
+	.con-list{
+		margin-left: 10px;
+		font-size: 28px;
+	}
+	.name{
+		font-size: 38px;
+	}
+	.con-container{
+		margin-bottom: 0px;
+	}
+	/******************/
+}
+
+/** iPADS**/
+@media (min-width: 768px) and (max-width: 850px){
+	/** Navbar **/
+	.nav-item{
+		font-size: 24px;
+	}
+	.home-link{
+		font-size: 32px;
+	}
+	/*************/
+	/** Index **/
+	.jumbo-header{
+		font-size: 52px;
+		margin-top: 20px;
+	}
+	.text{
+		font-size: 32px;
+		margin: 20px;
+		line-height: 46px;
+	}
+	/*************/
+	/** Equipment **/
+	.equi{
+		margin-top: 0;
+	}
+	.equi-header{
+		font-size: 34px;
+	}
+	li.equi-item{
+		font-size: 22px;
+	}
+	ul.equi-list{
+		margin-top: -10px;
+	}
+	/***************/
+	/** Contact **/
+	.david, .keith{
+		float: none;
+		margin-left: 10px;
+		margin-right: auto;
+	}
+	.keith{
+		margin-top: -40px;
+	}
+	.con-list{
+		margin-left: 10px;
+		font-size: 32px;
+	}
+	.name{
+		font-size: 42px;
+	}
+	/**************/
+}
+
+@media (min-width: 851px) and (min-width: 1024px){
+	/** Index **/
+	.jumbo-header{
+		margin-top: 20px;
+	}
+	.text{
+		font-size: 32px;
+		line-height: 40px;
+		margin-top:  30px;
+	}
+	/** Equipment **/
+	.equi-header{
+		margin-top: -50px;
+	}
+	/** Contact **/
+	.con-container{
+		margin-top: 40px;
+	}
+	.david{
+		margin-left: -10px;
+	}
+	.keith{
+		margin-right: 200px;
+	}
+	/** Services **/
+	.services{
+		margin-top: 15px;
+	}
+
+}
+
+@media(min-width: 1025) and (min-width: 1280px){
+	/** Equipment **/
+	.equi-header{
+		margin-top: -40px;
+	}
+	/** Index **/
+	.text{
+		font-size: 32px;
+		line-height: 40px;
+		margin-top: -20px;
+	}
+
+}
+
+@media (min-width: 1281px) and (min-width: 1440px) {
+	/** Navbar **/
+	.home-link{
+		font-size: 32px;
+	}
+	.nav-item{
+		font-size: 24px;
+	}
+	/** Index **/
+	.text{
+		font-size: 38px;
+		line-height: 70px;
+	}
+	/** Equipment **/
+	.equi-header{
+		font-size: 42px;
+		margin-top: -10px;
+	}
+	li.equi-item{
+		padding-left: 10px;
+		padding-top: 10px;
+		font-size: 24px;
+	}
+}
+
+@media(min-width: 1441px){
+	/** Navbar **/ 
+	.home-link{
+		color: black;
+		font-size: 38px;
+	}
+	.nav-item{
+		font-size: 28px;
+		color: black;
+	}
+	/** Index **/
+	.text{
+		font-size: 48px;
+		line-height: 70px;
+	}
+	.jumbo-header{
+		margin-top: 75px;
+	}
+	/** Equipment **/
+	.equi-header{
+		font-size: 48px;
+		margin-top: 10px;
+	}
+	li.equi-item{
+		padding-left: 10px;
+		padding-top: 10px;
+		font-size: 28px;
+	}
+}
