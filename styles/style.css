@@ -5,7 +5,6 @@
 body{
 	font-family: 'Poiret One', cursive;
 }
-
 /* NAVBAR */
 .navbar{
 	background: transparent;
@@ -34,9 +33,7 @@ span.icon-bar{
 .navbar-toggle:hover span.icon-bar{
 	border: 1px solid white;
 }
-
 /* JUMBO SECTION */
-
 img.bg {
   min-height: 100%;
   min-width: 1024px;
@@ -61,6 +58,7 @@ img.contact-blur {
 .jumbo-header{
 	text-align: center;
 	font-size: 72px;
+	font-weight: 400;
 	margin-top: 50px;
 	animation: fadeInHeader 3s;
 }
@@ -132,14 +130,11 @@ li.equi-item{
 hr{
 	border: 1px solid black;
 }
-
-
 /*** MEDIA ***/
 /* JesterBox 
  * Author: Schizohatter/Soanvig (http://schizohatter.tk)
  * More information in readme (https://github.com/soanvig/JesterBox)
  */
-
 .JesterBox div 
 { 
     visibility: hidden;
@@ -151,7 +146,6 @@ hr{
     justify-content: center;
     align-items: center;
 }
-
 .JesterBox div:before
 {
     content: '';
@@ -161,7 +155,6 @@ hr{
     background-color: rgba(0, 0, 0, 0);
     transition: all 0.5s ease-out;
 }
-
 .JesterBox div img
 {
     position: relative;
@@ -174,17 +167,13 @@ hr{
     transition-duration: 0.5s, 0.2s;
     transition-timing-function: ease-in-out, ease-out;
 }
-
 .JesterBox div:target { visibility: visible; }
-
 .JesterBox div:target:before { background-color: rgba(0, 0, 0, 0.7); }
-
 .JesterBox div:target img
 {
     margin-left: 0px;
     opacity: 1;
 }
-
 .flex-container {
     display:flex;
     flex-direction: row;
@@ -205,7 +194,6 @@ hr{
 	width: 100%;
 	height: 100%;
 }
-
 /** Services **/
 .services{
 	text-align: center;
@@ -245,7 +233,6 @@ hr{
 	font-weight: 700;
 	font-size: 56px;
 }
-
 /* FOOTER */
 footer{
 	position: fixed;
@@ -257,33 +244,33 @@ footer{
 	text-align: center;
 	padding-top: 20px;
 }
-
 /** MEDIA QUERIES **/
-
 /*** IPHONE 4/5 /  Galaxy S 2 ***/
 @media (min-width: 0px) and (max-width: 325px){
+	/** Navbar **/
+	.home-link{	
+		font-size: 20px;
+	}
+	/** Index **/
 	.jumbo-header{
-		text-align: center;
 		font-size: 32px;
-		font-weight: 400;
 		margin-top: 0;
 		margin-bottom: 10px;
 	}
 	.text{
 		font-size: 18px;
-		text-align: center;
 		margin: 5px;
 		line-height: 25px;
 	}
-	.home-link{
-		font-size: 20px;
+	.container{
+		margin-bottom: 100px;
 	}
+	/** Equipment **/
 	.equi{
 		margin-top: 0;
 		margin-bottom: 30px;
 	}
-	.equi-header{
-		font-weight: 400;
+	.equi-header{	
 		font-size: 22px;
 	}
 	li.equi-item{
@@ -294,6 +281,7 @@ footer{
 	ul.equi-list{
 		margin-top: -10px;
 	}
+	/** Contact **/
 	.david, .keith{
 		float: none;
 		margin-left: auto;
@@ -309,47 +297,43 @@ footer{
 	.name{
 		font-size: 32px;
 	}
+	.con-container{
+		margin-bottom: 0px;
+	}
+	/** Service **/
 	.service-item{
 		font-size: 18px;
 	}
 	.services{
 		margin-top: 0px;
 	}
-	.container{
-		margin-bottom: 100px;
-	}
-	.con-container{
-		margin-bottom: 0px;
-	}
+	/** Footer **/
 	footer{
-		position: fixed;
-		bottom: 0;
-		width: 100%;
 		height: 50px;
-		text-align: center;
 		padding-top: 10px;
 	}
 }
-
 /** NEW PHONES IPHONE 6 / NOTE 5 **/
 @media (min-width: 326px) and (max-width: 375px){
-	.jumbo-header{
-		text-align: center;
-		font-size: 42px;
-		margin-top: 20px;
-		font-weight: 400;
-	}
-	.text{
-		font-size: 20px;
-		text-align: center;
-		margin: 5px;
-		line-height: 30px;
-	}
+	/** Navbar **/
 	.home-link{
 		font-size: 24px;
 	}
+	/** Index **/
+	.container{
+		margin-bottom: 200px;
+	}
+	.jumbo-header{
+		font-size: 42px;
+		margin-top: 20px;
+	}
+	.text{
+		font-size: 20px;
+		margin: 5px;
+		line-height: 30px;
+	}
+	/** Equipment **/
 	.equi-header{
-		font-weight: 400;
 		font-size: 24px;
 	}
 	ul.equi-list{
@@ -360,10 +344,16 @@ footer{
 		padding-top: 10px;
 		font-size: 18px;
 	}
+	.equi{
+		margin-top: 10px;
+		margin-bottom: 270px;
+	}
+	/** Services **/
 	.service-item{
 		padding-top: 0;
 		font-size: 20px;
 	}
+	/** Contact **/
 	.david, .keith{
 		float: none;
 		margin-left: auto;
@@ -379,20 +369,13 @@ footer{
 	.name{
 		font-size: 32px;
 	}
-	.container{
-		margin-bottom: 200px;
-	}
-	.equi{
-		margin-top: 10px;
-		margin-bottom: 270px;
-	}
 	.con-container{
 		margin-bottom: 0px;
 	}
 }
-
 /** IPHONE 6 PlUS and Other **/
 @media (min-width: 376px) and (max-width: 529px){
+	/** Navbar **/
 	.navbar-collapse{
 		background-color: transparent;
 	}
@@ -406,6 +389,10 @@ footer{
 	.nav-item:hover{
 		color: white;
 	}
+	.container{
+		margin-bottom: 200px;
+	}
+	/*** Index ***/
 	.home{
 		margin-top: 50px;
 	}
@@ -419,8 +406,8 @@ footer{
 		font-size: 52px;
 		margin-top: 20px;
 	}
+	/*** Equipment ***/
 	.equi-header{
-		font-weight: 400;
 		font-size: 32px;
 	}
 	.equi-item{
@@ -428,7 +415,12 @@ footer{
 	}
 	ul.equi-list{
 		margin-top: -10px;
+	}	
+	.equi{
+		margin-top: 10px;
+		margin-bottom: 300px;
 	}
+	/*** Contact ***/
 	.david, .keith{
 		float: none;
 		margin-left: auto;
@@ -444,37 +436,34 @@ footer{
 	.name{
 		font-size: 34px;
 	}
-	.container{
-		margin-bottom: 200px;
-	}
 	.con-container{
 		margin-bottom: 0px;
 	}
-	.equi{
-		margin-top: 10px;
-		margin-bottom: 300px;
-	}
 }
-
 /** Most tablets**/
 @media (min-width: 530px) and (max-width: 767px){
-	.jumbo-header{
-		font-size: 52px;
-		margin-top: 0px;
+	/** Navbar **/
+	.home-link{
+		font-size: 32px;
 	}
 	.nav-item{
 		font-size: 24px;
 	}
-	.home-link{
-		font-size: 32px;
+	.container{
+		margin-bottom: 250px;
+	}
+	/** Index **/
+	.jumbo-header{
+		font-size: 52px;
+		margin-top: 0px;
 	}
 	.text{
 		font-size: 26px;
 		margin: 20px;
 		line-height: 36px;
 	}
+	/** Equipment**/
 	.equi-header{
-		font-weight: 400;
 		font-size: 36px;
 	}
 	li.equi-item{
@@ -483,6 +472,11 @@ footer{
 	ul.equi-list{
 		margin-top: -10px;
 	}
+	.equi{
+		margin-top: 10px;
+		margin-bottom: 400px;
+	}
+	/** Contact **/
 	.david, .keith{
 		float: none;
 		margin-left: 5px;
@@ -498,40 +492,34 @@ footer{
 	.name{
 		font-size: 38px;
 	}
-	.container{
-		margin-bottom: 250px;
-	}
 	.con-container{
 		margin-bottom: 0px;
 	}
-	.equi{
-		margin-top: 10px;
-		margin-bottom: 400px;
-	}
 }
-
 /** iPADS**/
 @media (min-width: 768px) and (max-width: 850px){
-	.jumbo-header{
-		font-size: 52px;
-		margin-top: 20px;
-	}
+	/** Navbar **/
 	.nav-item{
 		font-size: 24px;
 	}
 	.home-link{
 		font-size: 32px;
 	}
+	/** Index **/
+	.jumbo-header{
+		font-size: 52px;
+		margin-top: 20px;
+	}
 	.text{
 		font-size: 32px;
 		margin: 20px;
 		line-height: 46px;
 	}
+	/** Equipment **/
 	.equi{
 		margin-top: 0;
 	}
 	.equi-header{
-		font-weight: 400;
 		font-size: 34px;
 	}
 	li.equi-item{
@@ -540,6 +528,7 @@ footer{
 	ul.equi-list{
 		margin-top: -10px;
 	}
+	/** Contact **/
 	.david, .keith{
 		float: none;
 		margin-left: 10px;
@@ -556,14 +545,21 @@ footer{
 		font-size: 42px;
 	}
 }
-
 @media (min-width: 851px) and (min-width: 1024px){
-	.equi-header{
-		margin-top: -50px;
-	}
+	/** Index **/
 	.jumbo-header{
 		margin-top: 20px;
 	}
+	.text{
+		font-size: 32px;
+		line-height: 40px;
+		margin-top:  30px;
+	}
+	/** Equipment **/
+	.equi-header{
+		margin-top: -50px;
+	}
+	/** Contact **/
 	.con-container{
 		margin-top: 40px;
 	}
@@ -573,34 +569,37 @@ footer{
 	.keith{
 		margin-right: 200px;
 	}
-	.text{
-		font-size: 32px;
-		line-height: 40px;
-		margin-top:  30px;
-	}
+	/** Services **/
 	.services{
 		margin-top: 15px;
 	}
-
 }
-
 @media(min-width: 1025) and (min-width: 1280px){
+	/** Equipment **/
 	.equi-header{
 		margin-top: -40px;
 	}
+	/** Index **/
 	.text{
 		font-size: 32px;
 		line-height: 40px;
 		margin-top: -20px;
 	}
-
 }
-
 @media (min-width: 1281px) and (min-width: 1440px) {
+	/** Navbar **/
+	.home-link{
+		font-size: 32px;
+	}
+	.nav-item{
+		font-size: 24px;
+	}
+	/** Index **/
 	.text{
 		font-size: 38px;
 		line-height: 70px;
 	}
+	/** Equipment **/
 	.equi-header{
 		font-size: 42px;
 		margin-top: -10px;
@@ -610,18 +609,18 @@ footer{
 		padding-top: 10px;
 		font-size: 24px;
 	}
+}
+@media(min-width: 1441px){
+	/** Navbar **/ 
 	.home-link{
 		color: black;
-		font-size: 32px;
+		font-size: 38px;
 	}
 	.nav-item{
-		font-size: 24px;
+		font-size: 28px;
 		color: black;
 	}
-
-}
-
-@media(min-width: 1441px){
+	/** Index **/
 	.text{
 		font-size: 48px;
 		line-height: 70px;
@@ -629,6 +628,7 @@ footer{
 	.jumbo-header{
 		margin-top: 75px;
 	}
+	/** Equipment **/
 	.equi-header{
 		font-size: 48px;
 		margin-top: 10px;
@@ -637,13 +637,5 @@ footer{
 		padding-left: 10px;
 		padding-top: 10px;
 		font-size: 28px;
-	}
-	.home-link{
-		color: black;
-		font-size: 38px;
-	}
-	.nav-item{
-		font-size: 28px;
-		color: black;
 	}
 }
