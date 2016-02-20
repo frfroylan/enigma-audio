@@ -47,22 +47,6 @@
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-<script>
-$(document).ready(function(){
-	var clicked = false;//Needed to trigger GSAP animation
-	$("#navbutton").click(function(){
-		//Blur image by adding filtered class
-		$(".filter").toggleClass("filtered");
-		//Using GSAP to move the text on jumbotron when the mobile menu is clicked
-		home = $('.home');
-		if(clicked){
-			TweenLite.to(home, .6, {marginTop: '50px', ease:Power0.easeNone});
-		}else{
-			TweenLite.to(home, .6, {marginTop: '250px', ease:Power0.easeNone});
-		}
-		clicked = !clicked;
-	});
-});
-</script>
+<script src="js/filter.js"></script>
 </body>	
 </html>
