@@ -3,7 +3,7 @@
 	padding: 0;
 }
 body{
-	font-family: 'Poiret One', cursive;
+	font-family: 'Poiret One';
 }
 /* NAVBAR */
 .navbar{
@@ -59,8 +59,14 @@ img.contact-blur {
 	text-align: center;
 	font-size: 72px;
 	font-weight: 400;
+	margin: 0 auto;
 	margin-top: 50px;
 	animation: fadeInHeader 3s;
+	color: #FDF9E3;
+	background-color: #CB1C00;
+	letter-spacing: 5px;
+	min-width: 100%;
+
 }
 @keyframes fadeInHeader{
 	from{
@@ -83,6 +89,7 @@ img.contact-blur {
 	margin: 70px;
 	line-height: 35px;
 	animation: fadeInText 5s;
+	font-family: 'Quicksand';
 }
 @keyframes fadeInText{
 	from{
@@ -196,7 +203,7 @@ hr{
 }
 /** Services **/
 .services{
-	text-align: center;
+	text-align: left;
 	font-size: 24px;
 	font-style: bold;
 	margin-top: 30px;
@@ -207,6 +214,14 @@ hr{
 	padding-top: 10px;
 	font-family: 'Muli';
 	animation: fadeInText 3s;
+}
+.indented{
+	padding-left: 25px;
+	font-size: 20px;
+}
+.service-header{
+	font-family: 'Poiret One';
+	font-size: 22px;
 }
 /*** CONTACT ***/
 .david, 
@@ -261,18 +276,26 @@ footer{
 	.text{
 		font-size: 14px;
 		margin: 2px;
-		line-height: 25px;
+		margin-bottom: 140px;
+		line-height: 20px;
 	}
 	.container{
 		margin-bottom: 100px;
+	}
+	/** Service **/
+	.service-item{
+		font-size: 16px;
+	}
+	.services{
+		margin-top: 0px;
 	}
 	/** Equipment **/
 	.equi{
 		margin-top: 0;
 		margin-bottom: 30px;
 	}
-	.equi-header{	
-		font-size: 22px;
+	.equi-header, .service-header{	
+		font-size: 26px;
 	}
 	li.equi-item{
 		padding-left: 5px;
@@ -301,13 +324,6 @@ footer{
 	.con-container{
 		margin-bottom: 0px;
 	}
-	/** Service **/
-	.service-item{
-		font-size: 18px;
-	}
-	.services{
-		margin-top: 0px;
-	}
 	/** Footer **/
 	footer{
 		height: 50px;
@@ -331,11 +347,17 @@ footer{
 	.text{
 		font-size: 16px;
 		margin: 5px;
-		line-height: 24px;
+		margin-bottom: 140px;
+		line-height: 20px;
+	}
+	/** Services **/
+	.service-item{
+		padding-top: 0;
+		font-size: 18px;
 	}
 	/** Equipment **/
-	.equi-header{
-		font-size: 24px;
+	.equi-header, .service-header{
+		font-size: 26px;
 	}
 	ul.equi-list{
 		margin-top: -10px;
@@ -348,11 +370,6 @@ footer{
 	.equi{
 		margin-top: 10px;
 		margin-bottom: 270px;
-	}
-	/** Services **/
-	.service-item{
-		padding-top: 0;
-		font-size: 20px;
 	}
 	/** Contact **/
 	.david, .keith{
@@ -402,6 +419,7 @@ footer{
 		text-align: center;
 		margin: 20px;
 		margin-top: 10px;
+		margin-bottom: 140px;
 		line-height: 30px;
 	}
 	.jumbo-header{
@@ -409,7 +427,7 @@ footer{
 		margin-top: 20px;
 	}
 	/*** Equipment ***/
-	.equi-header{
+	.equi-header, .service-header{
 		font-size: 32px;
 	}
 	.equi-item{
@@ -463,10 +481,11 @@ footer{
 		font-size: 22px;
 		margin: 20px;
 		margin-top: 10px;
-		line-height: 36px;
+		line-height: 30px;
+		margin-bottom: 100px;
 	}
 	/** Equipment**/
-	.equi-header{
+	.equi-header, .service-header{
 		font-size: 36px;
 	}
 	li.equi-item{
@@ -514,15 +533,16 @@ footer{
 		margin-top: 20px;
 	}
 	.text{
-		font-size: 28px;
+		font-size: 26px;
 		margin: 20px;
-		line-height: 46px;
+		line-height: 38px;
+		margin-bottom: 100px;
 	}
 	/** Equipment **/
 	.equi{
 		margin-top: 0;
 	}
-	.equi-header{
+	.equi-header, .service-header{
 		font-size: 34px;
 	}
 	li.equi-item{
@@ -555,9 +575,10 @@ footer{
 		font-size: 44px;
 	}
 	.text{
-		font-size: 28px;
-		line-height: 40px;
+		font-size: 24px;
+		line-height: 32px;
 		margin-top:  20px;
+		margin-bottom: 100px;
 	}
 	/** Equipment **/
 	.equi-header{
@@ -584,6 +605,11 @@ footer{
 		margin-top: -40px;
 		font-size: 30px;
 	}
+	li.equi-item{
+		padding-left: 10px;
+		padding-top: 0px;
+		font-size: 22px;
+	}
 	/** Index **/
 	.jumbo-header{
 		font-size: 40px;
@@ -593,6 +619,10 @@ footer{
 		font-size: 26px;
 		line-height: 50px;
 		margin-top: 10px;
+	}
+	/*** Service***/
+	.service-header{
+		font-size: 30px;
 	}
 }
 @media (min-width: 1281px) and (max-width: 1440px) {
@@ -620,8 +650,12 @@ footer{
 	}
 	li.equi-item{
 		padding-left: 10px;
-		padding-top: 10px;
-		font-size: 24px;
+		padding-top: 0px;
+		font-size: 22px;
+	}
+	/***Service***/
+	.service-header{
+		font-size: 30px;
 	}
 }
 @media(min-width: 1441px) and (max-width: 1679px){
@@ -653,6 +687,10 @@ footer{
 		padding-left: 10px;
 		padding-top: 10px;
 		font-size: 28px;
+	}
+	/*** Services **/
+	.service-header{
+		font-size: 42px;
 	}
 }
 
@@ -686,5 +724,9 @@ footer{
 		padding-left: 10px;
 		padding-top: 10px;
 		font-size: 28px;
+	}
+	/*** Services **/
+	.service-header{
+		font-size: 48px;
 	}
 }
