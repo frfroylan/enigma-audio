@@ -224,7 +224,7 @@ hr{
 	font-size: 22px;
 }
 /*** CONTACT ***/
-.david, 
+.david,
 .keith{
 	font-family: 'Poiret One';
 	font-weight: 400;
@@ -259,12 +259,29 @@ footer{
 	color: black;
 	text-align: center;
 	padding-top: 20px;
+	padding-left: 200px;
+}
+.footer-text{
+	display: inline-block;
+}
+.social{
+	display:inline-block;
+	float: right;
+	color: #333;
+	width: 200px;
+	height: 30px;
+}
+.fa-google-plus-square{
+	color: #dd4b39;
+}
+.fa-google-plus-square:hover{
+	color: #CF2D11;
 }
 /** MEDIA QUERIES **/
 /*** IPHONE 4/5 /  Galaxy S 2 ***/
 @media (min-width: 0px) and (max-width: 325px){
 	/** Navbar **/
-	.home-link{	
+	.home-link{
 		font-size: 20px;
 	}
 	/** Index **/
@@ -294,7 +311,7 @@ footer{
 		margin-top: 0;
 		margin-bottom: 30px;
 	}
-	.equi-header, .service-header{	
+	.equi-header, .service-header{
 		font-size: 26px;
 	}
 	li.equi-item{
@@ -327,7 +344,11 @@ footer{
 	/** Footer **/
 	footer{
 		height: 50px;
-		padding-top: 10px;
+		padding-left: 0;
+	}
+	.social{
+		width: 70px;
+		height: 30px;
 	}
 }
 /** NEW PHONES IPHONE 6 / NOTE 5 **/
@@ -390,6 +411,14 @@ footer{
 	.con-container{
 		margin-bottom: 0px;
 	}
+	footer{
+		height: 50px;
+		padding-left: 50px;
+	}
+	.social{
+		width: 70px;
+		height: 30px;
+	}
 }
 /** IPHONE 6 PlUS and Other **/
 @media (min-width: 376px) and (max-width: 529px){
@@ -435,7 +464,7 @@ footer{
 	}
 	ul.equi-list{
 		margin-top: -10px;
-	}	
+	}
 	.equi{
 		margin-top: 10px;
 		margin-bottom: 300px;
@@ -458,6 +487,14 @@ footer{
 	}
 	.con-container{
 		margin-bottom: 0px;
+	}
+	footer{
+		height: 50px;
+		padding-left: 50px;
+	}
+	.social{
+		width: 70px;
+		height: 30px;
 	}
 }
 /** Most tablets**/
