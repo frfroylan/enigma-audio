@@ -11,4 +11,5 @@ $(document).ready(function(){
 		}
 		clicked = !clicked;
 	});
+	var form = $('form');
 });

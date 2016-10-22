@@ -1,0 +1,78 @@
+#contactForm{
+	width: 60%;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 50px;
+	background: transparent;
+}
+.control-group{
+	margin-top: 30px;
+}
+.label-text{
+	font-family: 'Maven Pro';
+	font-size: 24px;
+	font-weight: 500;
+}
+input[type="text"],
+input[type="email"],
+textarea[type="text"]{
+	font-family: 'Maven Pro';
+	font-size: 20px;
+	font-weight: 400;
+	color: #000;
+	border: 1px solid #FF644C;
+}
+
+.btn-primary{
+	background-color: #FF644C;
+	border: 0;
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Maven Pro';
+	font-weight: 400;
+	letter-spacing: 1px;
+	transition: .4s all;
+	height: 50px;
+	width: 100%;
+}
+.btn-primary:hover{
+	background-color: #CB1C00;
+}
+.thankyou-text{
+	text-align: center;
+	margin-top: 100px;
+	font-family: 'Poiret One';
+	font-size: 3em;
+	font-weight: 700;
+}
+.home{
+	margin-bottom: 75px;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	#contactForm{
+		width: 90%;
+		height: auto;
+		margin: 0 auto;
+		margin-top: 50px;
+		padding-bottom: 50px;
+		background: transparent;
+	}
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	#contactForm{
+		width: 60%;
+		height: auto;
+		margin: 0 auto;
+		margin-top: 50px;
+		padding-bottom: 100px;
+		background: transparent;
+	}
+}
