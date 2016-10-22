@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
 <head>
-	<title>EnigmaAudio - Contact</title>
-	<meta charset="UTF-8">
-	<meta NAME="viewport" CONTENT="width=device-width, initial-scale=1">
-	<meta NAME="google" CONTENT="notranslate" />
-	<meta NAME="keywords" CONTENT="enigma, audio, enigma-audio, sound, equipment, services, system, contact, chino, media, sound-engineering, david goeckner, keith patschke">
-	<meta NAME="description" CONTENT="Enigma Audio is a professional live sound reinforcement team that offers high quality services to transform your event into a lively and unforgettable experience. We are a driven team of seasoned sound engineers dedicated to sharing our passion with others. This dedication, coupled with a broad spectrum of high-performance equipment bring you a refined sonic orchestration. We have the know-how and the gear to accommodate any of your sound needs.  " />
-	<meta NAME="robots" CONTENT="index, follow">
-	<meta NAME="googlebot" CONTENT="noodp">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<!-- Enigma Audio CSS -->
-	<link rel="stylesheet" href="styles/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Poiret+One|Muli:400,300|Maven+Pro:400,500,700|Quicksand' rel='stylesheet' type='text/css'>
-	<script src="https://use.fontawesome.com/b077a438c4.js"></script>
+<!-- Author: Froy Terriquez
+email: froyterriquez@gmail.com	
+date: 02/19/16 -->
+<title>EnigmaAudio - Contact</title><meta charset="UTF-8"><meta NAME="viewport" CONTENT="width=device-width, initial-scale=1"><meta NAME="google" CONTENT="notranslate"/><meta NAME="keywords" CONTENT="enigma, audio, enigma-audio, sound, equipment, services, system, contact, chino, media, sound-engineering, david goeckner, keith patschke"><meta NAME="description" CONTENT="Enigma Audio is a professional live sound reinforcement team that offers high quality services to transform your event into a lively and unforgettable experience. We are a driven team of seasoned sound engineers dedicated to sharing our passion with others. This dedication, coupled with a broad spectrum of high-performance equipment bring you a refined sonic orchestration. We have the know-how and the gear to accommodate any of your sound needs. "/><meta NAME="robots" CONTENT="index, follow"><meta NAME="googlebot" CONTENT="noodp">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<link rel="stylesheet" href="styles/style.css">
+
+<link href='https://fonts.googleapis.com/css?family=Poiret+One|Muli:400,300|Maven+Pro:400,500,700|Quicksand' rel='stylesheet' type='text/css'>
+<script src="https://use.fontawesome.com/b077a438c4.js">
+</script>
+<link rel="stylesheet" href="styles/contactformstyles.css">
 </head>
+
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
@@ -25,9 +25,9 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="index.html"><span class="home-link">Home</span></a>
-				
+				</button><a class="navbar-brand" href="index.html">
+				<span class="home-link">Home</span>
+				</a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
@@ -36,44 +36,45 @@
 					<li><a href="services.html"><span class="nav-item">Services</span></a></li>
 					<li><a href="contact.html"><span class="nav-item">Contact</span></a></li>
 				</ul>
-			</div><!--/.navbar-collapse -->
+			</div>
 		</div>
 	</nav>
 	<div class="filter">
-		<!-- Jumbo Image and Text-->
+
 		<div class="container-fluid home">
-			<img src="images/contact.jpg" class="bg blur contact-blur" >
+			<img src="images/contact.JPG" class="bg blur contact-blur" >
 			<h1 class="jumbo-header">Contact</h1>
+
+			<form id="contactForm" action="http://www.enigma-audio.com/cgi-sys/formmail.pl" method="post" name="hgmailer">
+				<input type="hidden" name="recipient" value="info@enigma-audio.com">
+				<input type="hidden" name="subject" value="FormMail E-Mail">
+				<div class="control-group first-control-group">
+						<label class="label-text">Name:</label>
+						<input type="text" name="name" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+				</div>
+				<div class="control-group">
+						<label class="label-text">Email Address:</label>
+						<input type="email" name="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+				</div>
+				<div class="control-group">
+						<label class="label-text">Message:</label>
+						<textarea type="text" name="comment" rows="8" class="form-control message" required data-validation-required-message="Please enter your message" maxlength="500"></textarea>
+				</div>
+				<input type="hidden" name="redirect" value="http://www.enigma-audio.com/thankyou.html">
+				<div id="success"></div>
+				<button type="submit" class="btn btn-primary btn-text">Send Message</button>
+			</form>
 		</div>
-		<div class="container con-container">
-			<!--Example row of columns -->
-			<div class="david">
-				<h3 class="name">David</h3>
-				<ul class="con-list">
-					<li class="con-list-item">(909)631-9244</li>
-					<li class="con-list-item">enigmaaudio1@gmail.com</li>
-				</ul>
-			</div>
-			<div class="keith">
-				<h3 class="name">Keith</h3>
-				<ul class="con-list">
-					<li class="con-list-item">(909)632-3181</li>
-					<li class="con-list-item">enigmaaudio1@gmail.com</li>
-				</ul>
-			</div>
-		</div> <!-- /container -->
+
 	</div>
 	<footer>
 		<p class="footer-text">&copy; 2016 Enigma Audio</p>
 		<div class="social">
 			<a href="http://facebook.com/enigmadashaudio92" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
-			<a href="http://facebook.com/enigmadashaudio92" target="_blank"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
+			<a href="https://plus.google.com/u/0/110062898395963402098" target="_blank"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
 		</div>
 	</footer>
-<!-- Latest compiled and minified JavaScript -->
-<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-<script src="js/filter.js"></script>
-</body>	
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script><script src="js/filter.js"></script>
+</body>
 </html>
